@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cek Nilai</title>
+    <script>
+        function cekNilai() {
+            let input = document.getElementById("inputNilai").value;
+            let output = document.getElementById("output");
+
+            if (!isNaN(input)) {
+                output.textContent = "Nilai yang dimasukkan adalah angka.";
+            } else {
+                output.textContent = "Nilai yang dimasukkan bukan angka.";
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Cek Nilai</h1>
+    <input type="text" id="inputNilai" placeholder="Masukkan nilai">
+    <button onclick="cekNilai()">Cek</button>
+    <p id="output"></p>
+</body>
+</html>
